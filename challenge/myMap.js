@@ -9,7 +9,9 @@ function myMap(list, fun, defult) {
 
 
 a = [1, 2, 3, 4, 5]
-d = myMap(a, function (n) {
+d = myMap(a, function (n, p, q) {
+    p = a.indexOf(n)
+    q = a
     return n * 2
 })
 console.log(d)
