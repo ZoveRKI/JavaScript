@@ -128,11 +128,45 @@
 // (function () { /* code */ })();     //否则连着两个IIFE就可能报错
 // //以上两个就是立即调用的函数表达式（IIFE）
 
+// var a = [];
+
+// a[10] = 100
+// a['p'] = 'abc'
+// a.q = 'qqqq'
+
+// console.log(a)
+// console.log(a.length)
+
+// for (var i = 0; i < a.length; i++) {
+//     console.log(i)
+//     console.log(a[i]);
+// }       //遍历所有数字键
+
+// var a = [, , ,];
+// console.log(a[1])
+// console.log(a.length)
+// delete a[1]             //无影响
+// console.log(a[1])
+// console.log(a.length)
+
+// console.log(NaN === NaN)
+
+// console.log(Number({}))  //Nan
 
 
+// 1 !== '1' // true
+// // 等同于
+// !(1 === '1')
+
+// 1 != '1' // false
+// // 等同于
+// !(1 == '1')
+
+console.log(!!20)
+console.log(Boolean(20))
 
 
-
+//3.4节：二进制位运算符，暂时跳过
 
 
 
