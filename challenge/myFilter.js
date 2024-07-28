@@ -1,7 +1,9 @@
 function myFilter(list, fun, defult) {
     temp = []
     list.reduce(function (a, b) {
-        if (fun(a) && a > defult.MAX) {
+        if (defult && a > defult.MAX && fun(a)) {
+            temp.push(a)
+        } else if (!defult && fun(a)) {
             temp.push(a)
         }
         return b
