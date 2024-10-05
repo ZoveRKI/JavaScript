@@ -283,5 +283,6 @@ console.log(obj.bar)
 
 obj.bar.push('c');
 console.log(obj.bar) // ["a", "b", "c"]
+//test
 
 
