@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>xxxxxxxxxxxxx</button>
+    <script>
+        function dealy(duration, params) {
+            return new Promise(resolve => {
+                setTimeout(resolve, duration);
+                console.log('delay done' + params);
+            });
+        }
+
+        // let j = 1;
+        async function main() {
+            // let i = 0;
+            // while (1) {
+            //     // await dealy(1000, i); // 不卡
+            //     await 1; // 卡死
+            //     i++;
+            // }
+
+            // await dealy(1000, j); // 不卡
+            // await 1; // 卡死
+            // console.log('done' + j);
+            // j += 1;
+            // main();
+        }
+
+        main();
+    </script>
+</body>
+
+</html>
