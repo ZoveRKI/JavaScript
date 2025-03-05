@@ -2,7 +2,8 @@ const val1 = '{{{ 従業員/カスタマイズ項目["a  b"] }}}c  d["e   f"]{{{
 const val2 = '{{{ 従業員/カスタマイズ項目["g   h"] }}}';
 const val3 = '{{{ 従業員/カスタマイズ項目["a  b"] }}}c &nbsp;d["e &nbsp; f"]{{{ 従業員/カスタマイズ項目["p qs  t      h"] }}}';
 
-const regex = /\{{3}([^\[]*)\["([^"]*)"\]([^\}]*)\}{3}/g;
+// const regex = /\{{3}([^\[]*)\["([^"]*)"\]([^\}]*)\}{3}/g;
+const regex = /\{{3}([^{}]*)\["(.*?)"\]([^{}]*)\}{3}/g;
 const replaceSpaceRule = /( {2,})/g;
 const replaceValue = '&nbsp;';
 
@@ -50,5 +51,5 @@ function replaceConsecutiveSpace2(originalValue, extractedRule, replaceSpaceRule
     });
 }
 
-const d = replaceConsecutiveSpace(val3, regex, replaceSpaceRule, replaceValue);
+const d = replaceConsecutiveSpace2(val3, regex, replaceSpaceRule, replaceValue);
 console.log('d:', d);
