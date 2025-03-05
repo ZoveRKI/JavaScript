@@ -52,4 +52,4 @@ function replaceConsecutiveSpace2(originalValue, extractedRule, replaceSpaceRule
 }
 
 const d = replaceConsecutiveSpace2(val3, regex, replaceSpaceRule, replaceValue);
-console.log('d:', d);
+console.log('d: ', d);
